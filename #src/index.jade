@@ -1,0 +1,853 @@
+extends layout
+
+block content
+
+	img(width="99999" height="99999" alt="" style="pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;"  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+")
+
+	.tour-header
+		img.tour-header__bg._lazy(data-src="img/tour-bg.webp" src="img/px.png" alt="")
+		.tour-header__bg-mute
+		.container.container-sn.position-relative.h-100
+			.tour-header__socials
+				.tour-header__socials-label
+					| Мы на
+					br
+					| связи:
+				a(href="https://api.whatsapp.com/send/?phone=34677225316&amp;text&amp;app_absent=0" target="_blank").tour-header__social
+					.social.--whatsapp
+				a(href="https://t.me/elbrusclimb" target="_blank").tour-header__social
+					.social.--telegram
+				a(href="https://vk.me/club9690799" target="_blank").tour-header__social.--vk
+					.social.--vk
+			.tour-header__tags
+				span.sn-tag.tour-elegant-tag Непал
+				span.sn-tag.tour-elegant-tag Аннапурна
+				span.sn-tag.tour-elegant-tag Треккинг
+			.tour-header__heading
+				| ТУР В НЕПАЛ:
+				br
+				| ТРЕК ВОКРУГ АННАПУРНЫ 
+				br
+				| И ОЗЕРО ТИЛИЧО, ГИМАЛАИ
+			.tour-header__play
+				a.video(href="https://www.youtube.com/watch?v=0kUkAxZlW44" title="YouTube Video")
+			.tour-header__bottom.container.container-sn
+				.tour-header__chars
+					.tour-header-char.order-2.order-lg-1
+						span.tour-header-char__num 120
+						span.tour-header-char__unit км
+						.tour-header-char__descr Протяженность
+					.tour-header-char.order-1.order-lg-2
+						span.tour-header-char__num 15
+						span.tour-header-char__unit дней
+						.tour-header-char__descr Продолжительность
+					.tour-header-char.--with-icon.order-3.order-lg-3
+						span.tour-header-char__num 1/3
+						span.tour-header-char__picture.--level-1
+						.tour-header-char__descr Сложность
+					.tour-header-char.--with-icon.order-4.order-lg-4.sn-titled(data-title="Лучшие отели и лучший сервис.")
+						span.tour-header-char__num 1/4
+						span.tour-header-char__picture.--level-4
+						.tour-header-char__descr Комфорт
+				.tour-header__book-block
+					.tour-header__others-number
+						| 18.08.2022,  
+						a(href="#").link-highlight ещё 27 заездов 
+						| и 
+						a(href="/popup_individual_tour_contact.html" data-fancybox data-type="ajax" data-touch="false").link-highlight под заказ  
+						| — от 78 000 ₽
+					button.sn-btn.tour-header__book-btn Забронировать
+
+	.m-tour-header
+		.m-tour-header__title ТУР В НЕПАЛ: ТРЕК ВОКРУГ АННАПУРНЫ И ОЗЕРО ТИЛИЧО, ГИМАЛАИ
+		.m-tour-header__tags
+			span.sn-tag.tour-elegant-tag.--grey Все включено
+			span.sn-tag.tour-elegant-tag.--grey Непал
+			span.sn-tag.tour-elegant-tag.--grey Треккинг
+		#m-tour-header-carousel.m-tour-header__carousel.m-tour-header-carousel.owl-carousel.owl-theme
+			.m-tour-header-carousel-item
+				a.m-tour-header-carousel-item__play.video(href="https://www.youtube.com/watch?v=0kUkAxZlW44" title="YouTube Video")
+				img(src="img/tour-bg-preview.webp" alt="...")
+			.m-tour-header-carousel-item
+				img(src="img/tour-bg-preview.webp" alt="...")
+			.m-tour-header-carousel-item
+				img(src="img/tour-bg-preview.webp" alt="...")
+
+		.m-tour-header__chars
+			.m-tour-header__char
+				.m-tour-header__char-digit 15
+				.m-tour-header__char-descr дней
+			.m-tour-header__char
+				.m-tour-header__char-digit 120
+				.m-tour-header__char-descr км
+			.m-tour-header__char.--difficulty
+				.m-tour-header__char-digit 1/3
+				.m-tour-header__char-descr сложность
+			.m-tour-header__char.--comfort
+				.m-tour-header__char-digit 1/4
+				.m-tour-header__char-descr комфорт
+
+		.m-tour-header__others-number
+			a(href="#").link-highlight 27 заездов 
+			| и под заказ — от 78 000 ₽
+
+		.m-tour-header__prices
+			.m-tour-header__prices-left
+				| 18.08.2022,
+				br
+				| ещё 27 заездов и под заказ
+			.m-tour-header__prices-divider
+			.m-tour-header__prices-right
+				.m-tour-header__discount-to до 10.08.2022
+				.m-tour-header__full-price 125 000 ₽
+				.m-tour-header__price
+					| от 
+					b 110 000 ₽
+
+
+	//- div(style="height:18px").d-block.d-375-none
+	//- div(style="height:112px").d-none.d-375-block.d-md-none
+	//- div(style="height:57px").d-none.d-md-block
+
+	.tour-detail-section-container
+
+		nav.tour-detail-section-nav.d-none.d-md-block.d-lg-none
+			.container.container-sn
+				ul.tour-detail-section-nav__left.js-tds-nav
+					li
+						a(href="#tdb_description") Описание
+					li
+						a(href="#tdb_album") Фото
+					li
+						a(href="#tdb_schedule") Программа
+					li
+						a(href="#tdb_cost") Стоимость
+					li.d-none.d-xl-inline-block
+						a(href="#tdb_tour_choice") Заезды
+					li
+						a(href="#tdb_attention") Информация
+				.tour-detail-section-nav__right
+					span.tour-detail-section-nav__others
+						| 18.08.2022 и
+						a.link-highlight(href="#") ещё 27 заездов
+						| — от 78 000 ₽
+					button(type="button").sn-btn Забронировать
+
+		//- .m-tour-detail-section-container
+			
+		//- div(style="height:134px").d-none.d-md-block.d-lg-none
+
+		.container.container-sn
+
+			.tour-detail-block.tour-detail-block__top-prices
+
+				.tour-detail-top-prices.__variant_0
+					.tour-detail-top-prices__date
+						| 18.08.2022, 
+						a(href="#").link-highlight ещё 27 заездов
+						br
+						| возможен индивидуальный тур 
+						br
+						| и тур под заказ для частных групп
+					.tour-detail-top-prices__prices
+						.tour-detail-top-prices__discount-to Скидка до 10.08.2022
+						.tour-detail-top-prices__full-price 125 000 ₽
+						br
+						.tour-detail-top-prices__price
+							small от
+							b 110 000 ₽
+
+				.tour-detail-top-prices.__variant_1
+					.tour-detail-top-prices__date
+						| 19.08.2022, 
+						a(href="#").link-highlight ещё 27 заездов
+						br
+						| возможен индивидуальный тур 
+						br
+						| и тур под заказ для частных групп
+					.tour-detail-top-prices__prices
+						br
+						.tour-detail-top-prices__price
+							small от
+							b 110 000 ₽
+
+				.tour-detail-top-prices.__variant_2
+					.tour-detail-top-prices__date
+						| 19.08.2022, 
+						a(href="#").link-highlight ещё 27 заездов
+					.tour-detail-top-prices__prices
+						br
+						.tour-detail-top-prices__price
+							small от
+							b 110 000 ₽
+
+				.tour-detail-top-prices.__variant_3
+					.tour-detail-top-prices__date
+						span.tour-detail-top-prices__private-order-only Только под заказ
+					.tour-detail-top-prices__prices
+						br
+						.tour-detail-top-prices__price
+							small от
+							b 110 000 ₽
+
+				.tour-detail-top-prices.__variant_4
+					.tour-detail-top-prices__date.
+						18.08.2022, заезд каждую пятницу,
+						возможен индивидуальный тур
+						и тур под заказ для частных групп
+					.tour-detail-top-prices__prices
+						br
+						.tour-detail-top-prices__price
+							small от
+							b 110 000 ₽
+
+				.tour-detail-top-prices.__variant_5
+					.tour-detail-top-prices__date.
+						18.08.2022, и <a href="#" class="link-highlight">другие заезды</a> раз в месяц,
+						возможен индивидуальный тур
+						и тур под заказ для частных групп
+					.tour-detail-top-prices__prices
+						br
+						.tour-detail-top-prices__price
+							small от
+							b 110 000 ₽
+
+
+			.tour-detail-block.tour-detail-block__descr
+				.main_title_3
+					span
+						em
+				a(id="tdb_description").tdb-anchor
+
+				.tour-detail-about
+					.tour-detail-about__left
+						.tour-detail-about__title.tdb-heading О программе
+							
+						button.tour-detail-about__fav
+							span.text.d-lg-none В избранном
+							span.text.d-none.d-lg-inline-block Добавить в избранное
+							span.icon
+
+						.tour-detail-about__descr.
+							Эта программа сочетает в себе путешествие по Гималайским горам и знакомство с культурой Непала. Именно этот маршрут является самым популярным треком в Непале и одним из самых живописных маршрутов в мире. 
+							Ходовых дней девять. Каждый день будем проходить в среднем 14 км по горным тропинкам среди дикой природы и мимо маленьких непальских деревень, в которых мы и будем останавливаться на ночлег. Мы пройдём через все климатические зоны, начиная от тропиков и заканчивая вечными льдами. Еще текст 500шт
+
+						.tour-detail-about__m-btns
+							a.tour-detail-about-btn.tour-detail-about-btn--location(href="/popup_route_terms.html" data-fancybox data-type="ajax" data-touch="false")
+								span.icon
+								span.text Старт и финиш
+							button.tour-detail-about-btn.tour-detail-about-btn--download
+								span.icon
+								span.text Программа в PDF
+
+						.tour-detail-about__btns
+							a(href="https://www.africau.edu/images/default/sample.pdf" target="_blank").sn-btn.--default Скачать программу в PDF
+
+					.tour-detail-about__right
+						.tour-detail-about__period
+							span Старт: 
+							| 2 августа, 15:00 (местное время), Интурист, пл. Ленина, 13, Пятигорск, Ставропольский край 357503, Россия
+
+						.tour-detail-about__period
+							span Финиш: 
+							| 14 августа, 18:00 (местное время), Интурист, пл. Ленина, 13, Пятигорск, Ставропольский край 357503, Россия
+
+						.tour-detail-about__lang
+							span.sn-titled.sn-titled__left(data-title="Язык, на котором проводится инструктаж") Язык: 
+							| русский, ангийский
+
+		div(style="height:33px").d-none.d-lg-block
+
+		nav.tour-detail-section-nav.d-md-none.d-lg-block
+			.container.container-sn
+				ul.tour-detail-section-nav__left.js-tds-nav
+					li
+						a(href="#tdb_description") Описание
+					li
+						a(href="#tdb_album") Фото
+					li
+						a(href="#tdb_schedule") Программа
+					li
+						a(href="#tdb_cost") Стоимость
+					li
+						a(href="#tdb_tour_choice") Заезды
+					li
+						a(href="#tdb_attention") Информация
+				.tour-detail-section-nav__right
+					span.tour-detail-section-nav__others
+						| 18.08.2022 и 
+						a.link-highlight(href="#") ещё 27 заездов 
+						| — от 78 000 ₽
+					button(type="button").sn-btn Забронировать
+
+		.container.container-sn
+
+			.tour-detail-block.tour-detail-block__chars.tour-detail-chars
+				.tour-detail-chars__block.tour-detail-char-block
+					.tour-detail-char-block__heading
+						span.tour-detail-char-block__icon.--difficulty
+						| УРОВЕНЬ СЛОЖНОСТИ
+					.tour-detail-char-block__text
+						| 9 ходовых дней в среднем по 14 км. Вес рюкзака 15 кг. Есть возможность нанять портера. Доступно любому обычному человеку без медицинских противопоказаний. Допустимый возраст 12-80 лет.
+
+				.tour-detail-chars__block.tour-detail-char-block.--accommodation
+					.tour-detail-char-block__heading
+						span.tour-detail-char-block__icon.--accommodation
+						| ПРОЖИВАНИЕ
+					.tour-detail-char-block__text
+						| Отели, Лоджии (мини-отели местных жителей), по 2 человека в номере.
+						a(href="javascript:void(0);" onclick="$('#tour-detail-block-album a[data-effect]').eq(0).trigger('click')").tour-detail-char-block__link.d-lg-none Смотреть фото
+						button(onclick="$('#tour-detail-block-album a[data-effect]').eq(0).trigger('click')").sn-btn.d-none.d-lg-block.--default Смотреть фото
+
+				.tour-detail-chars__block.tour-detail-char-block.--food
+					.tour-detail-char-block__heading
+						span.tour-detail-char-block__icon.--food
+						| ПИТАНИЕ
+					.tour-detail-char-block__text
+						| Не включено, питаемся в лоджиях, оплачивается отдельно, около 20-25 USD в сутки.
+
+			.tour-detail-block.tour-detail-block__what2do.tour-detail-what2do
+				.main_title_3
+					span
+						em(style="width:25%")
+				.tdb-heading.d-md-none Главные впечатления
+				.tdb-heading.d-none.d-md-block Что будем делать?
+
+				.tour-detail-what2do__content
+					.tour-detail-what2do__list
+						.tour-detail-what2do__item Увидим Гималаи и пройдём через все их климатические зоны: от тропиков до вечных льдов.
+						.tour-detail-what2do__item Поднимемся к одному из самых высокогорных озёр в мире — Тиличо. И, возможно, даже искупаемся в нем.
+						.tour-detail-what2do__item Поднимемся на перевал Торонг Ла, высота 5416 м.
+						.tour-detail-what2do__item Познакомимся со столицей Непала Катманду, её главными достопримечательностями и, конечно, с непальской кухней.
+
+					.tour-detail-what2do__map
+						img._lazy(data-src="img/tour-map-ex.webp" src="img/px.png" alt="")
+
+			.tour-detail-block.tour-detail-block__album.tour-detail-album.d-none.d-md-block#tour-detail-block-album
+				.main_title_3
+					span
+						em(style="width:37%")
+
+				.tdb-heading Фотографии с маршрута
+				a(id="tdb_album").tdb-anchor
+
+				.tour-detail-album__pictures.magnific-gallery
+					.tour-detail-album__picture
+						img._lazy(data-src="img/footage/footage_ex_1.webp" src="img/px.png" alt="")
+						.tour-detail-album__more +24
+						a(href="img/footage/footage_ex_1.webp", data-effect="mfp-zoom-in", title="Photo title")
+
+					.tour-detail-album__picture
+						img._lazy(data-src="img/footage/footage_ex_2.webp" src="img/px.png" alt="")
+						.tour-detail-album__more +24
+						a(href="img/footage/footage_ex_2.webp", data-effect="mfp-zoom-in", title="Photo title")
+
+					.tour-detail-album__picture
+						img._lazy(data-src="img/footage/footage_ex_3.webp" src="img/px.png" alt="")
+						.tour-detail-album__more +24
+						a(href="img/footage/footage_ex_3.webp", data-effect="mfp-zoom-in", title="Photo title")
+
+					.tour-detail-album__picture
+						img._lazy(data-src="img/footage/footage_ex_4.webp" src="img/px.png" alt="")
+						.tour-detail-album__more +24
+						a(href="img/footage/footage_ex_4.webp", data-effect="mfp-zoom-in", title="Photo title")
+
+					.tour-detail-album__picture
+						img._lazy(data-src="img/footage/footage_ex_5.webp" src="img/px.png" alt="")
+						.tour-detail-album__more +24
+						a(href="img/footage/footage_ex_5.webp", data-effect="mfp-zoom-in", title="Photo title")
+
+					.tour-detail-album__picture
+						img._lazy(data-src="img/footage/footage_ex_6.webp" src="img/px.png" alt="")
+						.tour-detail-album__more +24
+						a(href="img/footage/footage_ex_6.webp", data-effect="mfp-zoom-in", title="Photo title")
+
+					a._lazy(data-href="img/tour-map-ex.webp" data-effect="mfp-zoom-in" title="Photo title 1" class="d-none")
+					a._lazy(data-href="img/tour-map-ex.webp" data-effect="mfp-zoom-in" title="Photo title 2" class="d-none")
+
+
+		.tour-detail-block.tour-detail-block__schedule.tour-detail-schedule
+			.container.container-sn
+				.main_title_3
+					span
+						em(style="width:38%")
+				.tdb-heading Описание по дням
+				a(id="tdb_schedule").tdb-anchor
+
+				.tour-detail-schedule__container.d-none.d-md-block
+					.sn-carousel.js-sn-carousel
+						a(href="javascript:void(0)" data-show-all).sn-carousel__show-all Раскрыть все дни
+						.sn-carousel__item.sn-carousel-item(data-item).d-flex
+							.sn-carousel-item__left 0 день
+							.sn-carousel-item__right
+								.sn-carousel-item__heading(data-heading) Встречаемся в Катманду
+								.sn-carousel-item__content(data-content) --пусто--
+
+						.sn-carousel__item.sn-carousel-item(data-item).d-flex.--visible
+							.sn-carousel-item__left 1 день
+							.sn-carousel-item__right
+								.sn-carousel-item__heading(data-heading) Переезд к точке начала трека - Чамдже
+								.sn-carousel-item__content(data-content)
+									| Вам необходимо прилететь в Катманду не позднее, чем в 9:00 накануне начала нашего тура, чтобы успеть оформить TIMS и пермит (это необходимо делать в вашем присутствии). Но ещё лучше — прилететь за 2 дня до начала тура. Так вы сможете отдохнуть после дороги и начать осмотр города. В любом случае мы встретим вас в назначенное время на выходе из аэропорта Катманду (KTM) и отвезём в отель.
+
+						.sn-carousel__item.sn-carousel-item(data-item).d-flex
+							.sn-carousel-item__left 2 день
+							.sn-carousel-item__right
+								.sn-carousel-item__heading(data-heading) Первый ходовой день: из Чамдже в Дхарапани
+								.sn-carousel-item__content(data-content) --пусто--
+
+						.sn-carousel__item.sn-carousel-item(data-item).d-flex
+							.sn-carousel-item__left 2 день
+							.sn-carousel-item__right
+								.sn-carousel-item__heading(data-heading) Первый ходовой день: из Чамдже в Дхарапани
+								.sn-carousel-item__content(data-content) --пусто--
+							
+						.sn-carousel__item.sn-carousel-item(data-item).d-flex
+							.sn-carousel-item__left 2 день
+							.sn-carousel-item__right
+								.sn-carousel-item__heading(data-heading) Первый ходовой день: из Чамдже в Дхарапани
+								.sn-carousel-item__content(data-content) --пусто--
+							
+						.sn-carousel__item.sn-carousel-item(data-item).d-flex
+							.sn-carousel-item__left 2 день
+							.sn-carousel-item__right
+								.sn-carousel-item__heading(data-heading) Первый ходовой день: из Чамдже в Дхарапани
+								.sn-carousel-item__content(data-content) --пусто--
+
+			#m-tour-detail-schedule-carousel.tour-detail-schedule__carousel.tds-carousel.owl-carousel.owl-theme.d-md-none
+				.tds-carousel-item
+					.tds-carousel-item__title
+						span 1 день. 
+						| Переезд к точке начала трека - Чамдже
+					.tds-carousel-item__content
+						| Вам необходимо прилететь в Катманду не позднее, чем в 9:00 накануне начала нашего тура, чтобы успеть оформить TIMS и пермит (это необходимо делать в вашем присутствии). Но ещё лучше — прилететь за 2 дня до начала тура. Так вы сможете отдохнуть после дороги и начать осмотр города. В любом случае мы встретим вас в назначенное время на выходе из аэропорта Катманду (KTM) и отвезём в отель. Так вы сможете отдохнуть после дороги и начать осмотр города. В любом случае мы встретим вас в назначенное время.
+
+				.tds-carousel-item
+					.tds-carousel-item__title
+						span 2 день. 
+						| Переезд к точке начала трека - Чамдже
+					.tds-carousel-item__content
+						| Вам необходимо прилететь в Катманду не позднее, чем в 9:00 накануне начала нашего тура, чтобы успеть оформить TIMS и пермит (это необходимо делать в вашем присутствии). Но ещё лучше — прилететь за 2 дня до начала тура. Так вы сможете отдохнуть после дороги и начать осмотр города. В любом случае мы встретим вас в назначенное время на выходе из аэропорта Катманду (KTM) и отвезём в отель. Так вы сможете отдохнуть после дороги и начать осмотр города. В любом случае мы встретим вас в назначенное время.
+
+		.tour-detail-block.tour-detail-block__cost.tour-detail-cost
+
+			.container.container-sn
+				.main_title_3
+					span
+						em(style="width:50%")
+				.tdb-heading Стоимость
+				a(id="tdb_cost").tdb-anchor
+
+			#m-tour-detail-tariff-carousel.tour-detail-schedule__carousel.tds-carousel.owl-carousel.owl-theme
+				.tds-carousel-item.tds-carousel-item__private
+					.tds-carousel-item__heading Частный тур
+					.tds-carousel-item__subheading
+						span Для вашей собственной группы<br> в любые согласованные даты
+					.tds-carousel-item__price-old.invisible 0 ₽
+					.tds-carousel-item__price <b>550 000 ₽ </b>
+					.tds-carousel-item__price-for Цена за группу до 5 человек <b><span class="d-none d-md-inline">+</span>90 000 ₽</b>
+					.tds-carousel-item__price-for.tds-carousel-item__price-for-2 Цена за каждого участника<br>свыше 5 человек
+					.tds-carousel-item__hr
+					.tds-carousel-item__contact-us
+						| Для заказа<br>
+						a(href="/popup_individual_tour_contact.html", data-fancybox="", data-type="ajax", data-touch="false") свяжитесь с менеджером
+
+				.tds-carousel-item.tds-carousel-item__group
+					.tds-carousel-item__heading Групповой тур
+					.tds-carousel-item__subheading
+						span Место в одном<br>из запланированных заездов
+					.tds-carousel-item__price-old 110 000 ₽
+					.tds-carousel-item__price от <b>78 000 ₽</b>
+					.tds-carousel-item__price-for Цена за 1 человека,<br>скидка до 22.07.2022
+					.tds-carousel-item__hr
+					.tds-carousel-item__purchase Для бронирования достаточно <b>25 000 ₽</b>
+					a(href="/popup_cancel_conditions.html", data-fancybox="", data-type="ajax", data-touch="false").tds-carousel-item__cancel-conditions Условия отмены
+
+				.tds-carousel-item.tds-carousel-item__individual
+					.tds-carousel-item__heading Индивидуальный тур
+					.tds-carousel-item__subheading
+						span Для одного или нескольких человек в любые согласованные даты
+					.tds-carousel-item__price-old.invisible 0 ₽
+					.tds-carousel-item__price <b>140 000 ₽</b>
+					.tds-carousel-item__price-for Цена за 1 человека
+					.tds-carousel-item__discount <span>-20%</span> при бронировании для 2 и более человек
+					.tds-carousel-item__hr
+					.tds-carousel-item__contact-us
+						| Для заказа<br>
+						a(href="/popup_individual_tour_contact.html", data-fancybox="", data-type="ajax", data-touch="false") свяжитесь с менеджером
+
+		.container.container-sn
+			.tour-detail-block.tour-detail-block__price-composition.d-none.d-md-block
+				.price-compositions
+					.price-composition
+						.price-composition__heading
+							span.price-composition__icon.--yes
+							| В СТОИМОСТЬ ВКЛЮЧЕНО:
+						.price-composition__list
+							ul
+								li Консультации менеджеров на этапе подготовки
+								li Услуги русскоговорящих гидов
+								li Встреча в аэропорту и трансфер обратно в аэропорт
+								li Оформление пермитов и TIMS`ов
+								li Туристическая страховка
+								li Все трансферы по программе, в том числе во время экскурсий
+								li Посещение всех достопримечательностей по программе
+								li Проживание в лоджиях на маршруте
+								li Средства безопасности: GPS, спутниковый телефон, рации, аптечка
+								li Фирменная футболка
+								li Экскурсии в Покхаре и Катманду
+								li 1 ночь в отеле в Покхаре, 2 ночи в отеле в Катманду
+								li 3 завтрака в Покхаре и Катманду
+					.price-composition.--negative
+						.price-composition__heading
+							span.price-composition__icon.--no
+							| В СТОИМОСТЬ НЕ ВКЛЮЧЕНО:
+						.price-composition__list
+							ul
+								li Авиаперелет
+								li Оформление непальской визы по прибытию в Непал — 50 $
+								li Питание на протяжении всей программы (кроме трёх завтраков в Покхаре и Катманду) - около 20–25 $ в день
+
+			.tour-detail-block.tour-detail-block__price-composition.d-md-none
+				.sn-carousel.js-sn-carousel
+					.sn-carousel__item.sn-carousel-item(data-item).--has-icon.--visible
+						.sn-carousel-item__heading(data-heading)
+							.sn-carousel-item__icon.--yes
+							| В СТОИМОСТЬ ВКЛЮЧЕНО
+						.sn-carousel-item__content(data-content)
+							ul
+								li Консультации менеджеров на этапе подготовки
+								li Услуги русскоговорящих гидов
+								li Встреча в аэропорту и трансфер обратно в аэропорт
+								li Оформление пермитов и TIMS`ов
+								li Туристическая страховка
+								li Все трансферы по программе, в том числе во время экскурсий
+								li Посещение всех достопримечательностей по программе
+								li Проживание в лоджиях на маршруте
+								li Средства безопасности: GPS, спутниковый телефон, рации, аптечка
+								li Фирменная футболка
+								li Экскурсии в Покхаре и Катманду
+								li 1 ночь в отеле в Покхаре, 2 ночи в отеле в Катманду
+								li 3 завтрака в Покхаре и Катманду
+
+					.sn-carousel__item.sn-carousel-item(data-item).--has-icon
+						.sn-carousel-item__heading(data-heading)
+							.sn-carousel-item__icon.--no
+							| В СТОИМОСТЬ НЕ ВКЛЮЧЕНО
+						.sn-carousel-item__content(data-content) --пусто--
+
+			.tour-detail-block.tour-detail-block__tour-choice
+				.main_title_3
+					span
+						em(style="width:75%")
+				.tdb-heading Выберите заезд
+				a(id="tdb_tour_choice").tdb-anchor
+
+				.tour-choice
+					.tour-choice-header
+						.tour-choice-header__date ДАТА ЗАЕЗДА
+						.tour-choice-header__guide ИНСТРУКТОР
+						.tour-choice-header__left ОСТАЛОСЬ
+						.tour-choice-header__prices ЦЕНА
+						.tour-choice-header__book
+					.tour-choice__rows
+						.tour-choice-row
+							.tour-choice-row__date 18.08.2022 - 02.09.2022
+							.tour-choice-row__guide
+								.tour-choice-row__guide-picture
+									img._lazy(data-src="img/guide_ex.webp" src="img/px.png" alt="")
+								.tour-choice-row__guide-content
+									a(href="https://strahu-net.com/gid/sergey-pugachyev/").tour-choice-row__guide-name Александр Сотников
+									.tour-choice-row__guide-detail Инструктор альпинизма, мастер спорта, Снежный Барс
+							.tour-choice-row__left.--warning 1 место
+							.tour-choice-row__prices 
+								.tour-choice-row__price-full 110 000 ₽
+								.tour-choice-row__price 78 000 ₽ 
+								.tour-choice-row__discount-to до 22.08.22
+							.tour-choice-row__book
+								.sn-btn Забронировать
+
+						.tour-choice-row
+							.tour-choice-row__date 18.08.2022 - 02.09.2022
+							.tour-choice-row__guide
+								.tour-choice-row__guide-picture
+									img._lazy(data-src="img/guide_ex.webp" src="img/px.png" alt="")
+								.tour-choice-row__guide-content
+									a(href="https://strahu-net.com/gid/sergey-pugachyev/").tour-choice-row__guide-name Сергей Пугачев
+									.tour-choice-row__guide-detail Чемпион России, мастер спорта, автор книги "Дорога к вершинам"
+							.tour-choice-row__left.--warning 1 место
+							.tour-choice-row__prices
+								.tour-choice-row__price-full 110 000 ₽
+								.tour-choice-row__price 78 000 ₽ 
+								.tour-choice-row__discount-to до 22.08.22
+							.tour-choice-row__book
+								.sn-btn Забронировать
+
+						.tour-choice-row
+							.tour-choice-row__date 18.08.2022 - 02.09.2022
+							.tour-choice-row__guide
+								.tour-choice-row__guide-picture
+									img._lazy(data-src="img/guide_ex.webp" src="img/px.png" alt="")
+								.tour-choice-row__guide-content
+									a(href="https://strahu-net.com/gid/sergey-pugachyev/").tour-choice-row__guide-name Александр Сотников
+									.tour-choice-row__guide-detail МС по альпинизму, инструктор по альпинизму и скалолазанию, судья 2 категории
+							.tour-choice-row__left.--warning 1 место
+							.tour-choice-row__prices 
+								.tour-choice-row__price-full 110 000 ₽
+								.tour-choice-row__price 78 000 ₽ 
+								.tour-choice-row__discount-to до 22.08.22
+							.tour-choice-row__book
+								.sn-btn Забронировать
+
+			.tour-detail-block.tour-detail-block__attention
+				.main_title_3
+					span
+						em(style="width:75%")
+				.tdb-heading.d-md-none Важная информация
+				.tdb-heading.d-none.d-md-block Информация
+				a(id="tdb_attention").tdb-anchor
+
+				.sn-carousel.js-sn-carousel
+					.sn-carousel__show-all.invisible Раскрыть все дни
+					.sn-carousel__item.sn-carousel-item(data-item)
+						.sn-carousel-item__heading(data-heading) АВИАБИЛЕТЫ
+						.sn-carousel-item__content(data-content)
+							| Вам необходимо:
+							br
+							| 1) Наличие Сертификата о вакцинации (в т.ч. Спутник V) на английском языке. Если нет вакцинации, то необходимо оформить визу в Консульстве Непала в Москве (делается за одно посещение).
+							br
+							| 2) ПЦР-тест, сделанный за 72 часов до прилёта в Катманду, распечатанный на английский языке.
+
+					.sn-carousel__item.sn-carousel-item(data-item).--visible
+						.sn-carousel-item__heading(data-heading) ПРАВИЛА ВЪЕЗДА В СТРАНУ
+						.sn-carousel-item__content(data-content)
+							| Вам необходимо:
+							br
+							| 1) Наличие Сертификата о вакцинации 
+							br.d-lg-none
+							| (в т.ч. Спутник V) на английском языке. Если нет вакцинации, то необходимо оформить визу в Консульстве Непала в Москве (делается за одно посещение). 
+							br
+							| 2) ПЦР-тест, сделанный за 72 часов до прилёта в Катманду, распечатанный на английский языке.
+
+					.sn-carousel__item.sn-carousel-item(data-item)
+						.sn-carousel-item__heading(data-heading) СТРАХОВКА
+						.sn-carousel-item__content(data-content) --пусто--
+
+					.sn-carousel__item.sn-carousel-item(data-item)
+						.sn-carousel-item__heading(data-heading) ОБЯЗАТЕЛЬНАЯ<br class="d-md-none"> ОДЕЖДА
+						.sn-carousel-item__content(data-content) --пусто--
+						
+					.sn-carousel__item.sn-carousel-item(data-item)
+						.sn-carousel-item__heading(data-heading) ОБЯЗАТЕЛЬНОЕ СНАРЯЖЕНИЕ
+						.sn-carousel-item__content(data-content) --пусто--
+						
+					.sn-carousel__item.sn-carousel-item(data-item)
+						.sn-carousel-item__heading(data-heading) ДРУГОЕ НЕОБЯЗАТЕЛЬНОЕ СНАРЯЖЕНИЕ
+						.sn-carousel-item__content(data-content) --пусто--
+						
+					.sn-carousel__item.sn-carousel-item(data-item)
+						.sn-carousel-item__heading(data-heading) ДОПОЛНИТЕЛЬНЫЕ<br class="d-375-none"> УСЛУГИ
+						.sn-carousel-item__content(data-content)
+							.sn-carousel-item-price
+								.sn-carousel-item-price__name Услуги портера
+								.sn-carousel-item-price__descr.d-md-none Портер, несёт 15 кг вашего груза, цена за 1 день.
+								.sn-carousel-item-price__descr.d-none.d-md-block Портер несет до 15 кг вашего груза до штурмового лагеря и вниз. На вершину портер не идет.
+								.sn-carousel-item-price__value 2 000 ₽
+							.sn-carousel-item-price
+								.sn-carousel-item-price__name Одноместное размещение
+								.sn-carousel-item-price__descr Одноместное размещение в Покхаре и Катманду.
+								.sn-carousel-item-price__value 10 000 ₽
+							.sn-carousel-item-price
+								.sn-carousel-item-price__name Альпинистская страховка
+								.sn-carousel-item-price__descr Альпинистская страховка, покрывающая вертолетную эвакуацию.
+								.sn-carousel-item-price__value 10 000 ₽
+
+			.tour-detail-block.tour-detail-block__how2part
+				.how2part
+					.how2part__heading Как принять участие?
+					.how2part__content
+						| Вы можете 
+						a.link-highlight(href="#") забронировать этот тур 
+						| прямо сейчас самостоятельно. Это займет 5 минут. Если у вас остались вопросы, 
+						a.link-highlight(href="/popup_callback_contact.html" data-fancybox data-type="ajax" data-touch="false") свяжитесь с нами 
+						| удобным для вас способом.
+
+		.m-tour-detail-actions
+			.m-tour-detail-actions__left
+				button.m-tour-detail-actions__book-btn.sn-btn Забронировать
+			.m-tour-detail-actions__right
+				a(href="/popup_callback_msg.html" data-fancybox data-type="ajax" data-touch="false").m-tour-detail-actions__callback
+					span.icon
+
+	.container.container-sn
+		.tour-detail-block.tour-detail-block__reviews
+			.main_title_3
+				span
+					em(style="width:88%")
+			.tdb-heading Отзывы на Яндекс
+
+			.tdb-ya-reviews
+				//- img.w320(src="img/reviews_ex/320.png" alt="...")
+				//- img.w375(src="img/reviews_ex/375.png" alt="...")
+				//- img.w834(src="img/reviews_ex/834.png" alt="...")
+				//- img.w1440(src="img/reviews_ex/1440.png" alt="...")
+				//- script(src="https://res.smartwidgets.ru/app.js" defer)
+				div(class="sw-app" data-app="3d8a67f50a147568bd2321f0d44285f2")
+
+	.tour-detail-block.tour-detail-block__more
+		.container.container-sn
+			.main_title_3
+				span
+					em(style="width:100%")
+			.tdb-heading Ещё Эльбрус
+
+		.container.container-sn.position-relative
+			a(href="javascript:void(0)").tdb-more-all Все туры <i class="icon-right-4"></i>
+
+		.container.container-tdb-more-carousel
+			#tour-book-carousel.tour-book-carousel.owl-carousel.owl-theme
+				.item.tour-book-item
+					.tour-book-item__preview
+						img._lazy(data-src="img/elbrus-more-ex.webp" src="img/px.png" alt="")
+						.tour-book-item__preview-content
+							.tour-book-item__tags
+								.tour-book-item__tag Все включено
+								.tour-book-item__tag Россия
+
+							button.tour-book-item__fav
+
+							.tour-book-item__title ВОСХОЖДЕНИЕ НА ЭЛЬБРУС С ЮГА, КОМФОРТ
+
+					.tour-book-item__chars
+						.tour-book-item__char
+							.tour-book-item__char-digit 15
+							.tour-book-item__char-descr дней
+						.tour-book-item__char.--km
+							.tour-book-item__char-digit 120
+							.tour-book-item__char-descr км
+						.tour-book-item__char.--difficulty
+							.tour-book-item__char-picture.--level-1
+							.tour-book-item__char-descr сложность
+						.tour-book-item__char.--comfort
+							.tour-book-item__char-picture.--level-1
+							.tour-book-item__char-descr комфорт
+
+					.tour-book-item__details
+						.tour-book-item__date
+							| 18.08.2022,
+							br
+							| ещё 27 заездов
+							br
+							| и под заказ
+						.tour-book-item__prices
+							.tour-book-item__discount-to до 10.08.2022
+							.tour-book-item__full-price 125 000 ₽
+							.tour-book-item__price
+								small от
+								b 110 000 ₽
+
+					.tour-book-item__btns
+						.tour-book-item__more-btn
+							a(href="#") Подробнее
+						.tour-book-item__book-btn
+							a(href="#").sn-btn Забронировать
+
+				.item.tour-book-item
+					.tour-book-item__preview
+						img._lazy(data-src="img/elbrus-more-ex.webp" src="img/px.png" alt="")
+						.tour-book-item__preview-content
+							.tour-book-item__tags
+								.tour-book-item__tag Все включено
+								.tour-book-item__tag Россия
+
+							button.tour-book-item__fav.active
+
+							.tour-book-item__title ВОСХОЖДЕНИЕ НА ЭЛЬБРУС С ЮГА, КОМФОРТ
+
+					.tour-book-item__chars
+						.tour-book-item__char
+							.tour-book-item__char-digit 15
+							.tour-book-item__char-descr дней
+						.tour-book-item__char.--km
+							.tour-book-item__char-digit 120
+							.tour-book-item__char-descr км
+						.tour-book-item__char.--difficulty
+							.tour-book-item__char-picture.--level-1
+							.tour-book-item__char-descr сложность
+						.tour-book-item__char.--comfort
+							.tour-book-item__char-picture.--level-1
+							.tour-book-item__char-descr комфорт
+
+					.tour-book-item__details
+						.tour-book-item__date
+							| 18.08.2022,
+							br
+							| ещё 27 заездов
+							br
+							| и под заказ
+						.tour-book-item__prices
+							.tour-book-item__discount-to.invisible &nbsp;
+							.tour-book-item__full-price.invisible &nbsp;
+							.tour-book-item__price
+								small от
+								b 110 000 ₽
+
+					.tour-book-item__btns
+						.tour-book-item__more-btn
+							a(href="#") Подробнее
+						.tour-book-item__book-btn
+							a(href="#").sn-btn Забронировать
+
+				.item.tour-book-item
+					.tour-book-item__preview
+						img._lazy(data-src="img/elbrus-more-ex.webp" src="img/px.png" alt="")
+						.tour-book-item__preview-content
+							.tour-book-item__tags
+								.tour-book-item__tag Все включено
+								.tour-book-item__tag Россия
+
+							button.tour-book-item__fav
+
+							.tour-book-item__title ВОСХОЖДЕНИЕ НА ЭЛЬБРУС С ЮГА, КОМФОРТ
+
+					.tour-book-item__chars
+						.tour-book-item__char
+							.tour-book-item__char-digit 15
+							.tour-book-item__char-descr дней
+						.tour-book-item__char.--km
+							.tour-book-item__char-digit 120
+							.tour-book-item__char-descr км
+						.tour-book-item__char.--difficulty
+							.tour-book-item__char-picture.--level-1
+							.tour-book-item__char-descr сложность
+						.tour-book-item__char.--comfort
+							.tour-book-item__char-picture.--level-1
+							.tour-book-item__char-descr комфорт
+
+					.tour-book-item__details
+						.tour-book-item__private-order-only
+							span Только под заказ
+						.tour-book-item__prices
+							.tour-book-item__discount-to.invisible &nbsp;
+							.tour-book-item__full-price.invisible &nbsp;
+							.tour-book-item__price
+								small от
+								b 110 000 ₽
+
+					.tour-book-item__btns
+						.tour-book-item__more-btn
+							a(href="#") Подробнее
+						.tour-book-item__book-btn
+							a(href="#").sn-btn Забронировать
+
+
+			.owl-theme
+				.owl-controls
+					.custom-nav.owl-nav
+
+
+	.toTop-container
+		.toTop-container__inner
+			.toTop-container__fill
+			#toTop(onclick="window.scrollTo({top: 0, behavior: 'smooth'});")
+				span

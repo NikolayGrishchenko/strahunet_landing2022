@@ -1,0 +1,47 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		meta(name='description' content='Тур в Непал: Трек вокруг Аннапурны и озеро Тиличо, Гималаи')
+		meta(name='keywords' content='Тур в Непал: Трек вокруг Аннапурны и озеро Тиличо, Гималаи')
+		title Тур в Непал: Трек вокруг Аннапурны и озеро Тиличо, Гималаи
+		// Favicons
+		link(rel='shortcut icon' href='img/favicon-16x16.png' type='image/x-icon')
+		link(rel='apple-touch-icon' type='image/x-icon' href='img/apple-touch-icon-57x57-precomposed.png')
+		link(rel='apple-touch-icon' type='image/x-icon' sizes='72x72' href='img/apple-touch-icon-72x72-precomposed.png')
+		link(rel='apple-touch-icon' type='image/x-icon' sizes='114x114' href='img/apple-touch-icon-114x114-precomposed.png')
+		link(rel='apple-touch-icon' type='image/x-icon' sizes='144x144' href='img/apple-touch-icon-144x144-precomposed.png')
+		// GOOGLE WEB FONT
+		link(rel='preconnect' href='https://yastatic.net/')
+		link(rel='preconnect' href='https://fonts.gstatic.com/')
+		link(rel='preconnect' href='https://fonts.gstatic.com/' crossorigin)
+		link(rel='preconnect' href='https://fonts.googleapis.com/')
+		link(rel='preconnect' href='https://fonts.googleapis.com/' crossorigin)
+		// BASE CRITICAL CSS
+		link(href='css/bootstrap-critical.min.css' rel='stylesheet')
+		link(href='css/select2.min.css' rel='stylesheet')
+		link(href='css/style.min.css' rel='stylesheet')
+		link(href='css/vendors-critical.css' rel='stylesheet')
+		// BASE NONCRITICAL RESOURCES
+		link#noncritical_resources(rel="stylesheet" href="css/empty.css")
+		// CUSTOM CSS
+		link(href='css/custom.css' rel='stylesheet')
+		link(href='css/custom-375.css' rel='stylesheet' media="screen and (min-width: 375px)")
+		link(href='css/custom-768.css' rel='stylesheet' media="screen and (min-width: 768px)")
+		link(href='css/custom-992.css' rel='stylesheet' media="screen and (min-width: 992px)")
+		link(href='css/custom-1200.css' rel='stylesheet' media="screen and (min-width: 1200px)")
+		link(href='css/custom-1400.css' rel='stylesheet' media="screen and (min-width: 1400px)")
+		link(href='css/custom-1600.css' rel='stylesheet' media="screen and (min-width: 1600px)")
+		// Modernizr
+		script(src='js/common_scripts.js' defer)
+		script(src='js/main.js' defer)
+
+	body
+		#page
+			include includes/menu-top
+
+			main
+				block content
+
+				include includes/footer

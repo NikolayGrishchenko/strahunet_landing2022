@@ -1,0 +1,382 @@
+extends layout
+
+block content
+	div(style="height:580px; background-color: #ccc")
+
+	.container.container-price-compositions
+		.price-compositions
+			.price-composition
+				.price-composition__heading
+					span.price-composition__icon.--yes
+					| В СТОИМОСТЬ ВКЛЮЧЕНО:
+				.price-composition__list
+					ul
+						li Консультации менеджеров на этапе подготовки
+						li Услуги русскоговорящих гидов
+						li Встреча в аэропорту и трансфер обратно в аэропорт
+						li Оформление пермитов и TIMS`ов
+						li Туристическая страховка
+						li Все трансферы по программе, в том числе во время экскурсий
+						li Посещение всех достопримечательностей по программе
+						li Проживание в лоджиях на маршруте
+						li Средства безопасности: GPS, спутниковый телефон, рации, аптечка
+						li Фирменная футболка
+						li Экскурсии в Покхаре и Катманду
+						li 1 ночь в отеле в Покхаре, 2 ночи в отеле в Катманду
+						li 3 завтрака в Покхаре и Катманду
+			.price-composition.--negative
+				.price-composition__heading
+					span.price-composition__icon.--no
+					| В СТОИМОСТЬ НЕ ВКЛЮЧЕНО:
+				.price-composition__list
+					ul
+						li Авиаперелет
+						li Оформление непальской визы по прибытию в Непал — 50 $
+						li Питание на протяжении всей программы (кроме трёх завтраков в Покхаре и Катманду) - около 20–25 $ в день
+
+	.container.container-carousel
+		.sn-carousel.js-sn-carousel
+			.sn-carousel__item.sn-carousel-item(data-item).--has-icon.--visible
+				.sn-carousel-item__heading(data-heading)
+					.sn-carousel-item__icon.--yes
+					| В СТОИМОСТЬ ВКЛЮЧЕНО
+				.sn-carousel-item__content(data-content)
+					ul
+						li Консультации менеджеров на этапе подготовки
+						li Услуги русскоговорящих гидов
+						li Встреча в аэропорту и трансфер обратно в аэропорт
+						li Оформление пермитов и TIMS`ов
+						li Туристическая страховка
+						li Все трансферы по программе, в том числе во время экскурсий
+						li Посещение всех достопримечательностей по программе
+						li Проживание в лоджиях на маршруте
+						li Средства безопасности: GPS, спутниковый телефон, рации, аптечка
+						li Фирменная футболка
+						li Экскурсии в Покхаре и Катманду
+						li 1 ночь в отеле в Покхаре, 2 ночи в отеле в Катманду
+						li 3 завтрака в Покхаре и Катманду
+
+			.sn-carousel__item.sn-carousel-item(data-item).--has-icon
+				.sn-carousel-item__heading(data-heading)
+					.sn-carousel-item__icon.--no
+					| В СТОИМОСТЬ НЕ ВКЛЮЧЕНО
+				.sn-carousel-item__content(data-content) --пусто--
+
+	div(style="height:114px;")
+
+	.container.container-carousel
+		.sn-carousel.js-sn-carousel
+			.sn-carousel__show-all Раскрыть все дни
+			.sn-carousel__item.sn-carousel-item(data-item)
+				.sn-carousel-item__heading(data-heading) АВИАБИЛЕТЫ
+				.sn-carousel-item__content(data-content)
+					| Вам необходимо:
+					br
+					| 1) Наличие Сертификата о вакцинации (в т.ч. Спутник V) на английском языке. Если нет вакцинации, то необходимо оформить визу в Консульстве Непала в Москве (делается за одно посещение).
+					br
+					| 2) ПЦР-тест, сделанный за 72 часов до прилёта в Катманду, распечатанный на английский языке.
+
+			.sn-carousel__item.sn-carousel-item(data-item).--visible
+				.sn-carousel-item__heading(data-heading) ПРАВИЛА ВЪЕЗДА В СТРАНУ
+				.sn-carousel-item__content(data-content)
+					| Вам необходимо:
+					br
+					| 1) Наличие Сертификата о вакцинации 
+					br.d-lg-none
+					| (в т.ч. Спутник V) на английском языке. Если нет вакцинации, то необходимо оформить визу в Консульстве Непала в Москве (делается за одно посещение). 
+					br
+					| 2) ПЦР-тест, сделанный за 72 часов до прилёта в Катманду, распечатанный на английский языке.
+
+			.sn-carousel__item.sn-carousel-item(data-item)
+				.sn-carousel-item__heading(data-heading) СТРАХОВКА
+				.sn-carousel-item__content(data-content) --пусто--
+
+			.sn-carousel__item.sn-carousel-item(data-item)
+				.sn-carousel-item__heading(data-heading) ОБЯЗАТЕЛЬНАЯ ОДЕЖДА
+				.sn-carousel-item__content(data-content) --пусто--
+				
+			.sn-carousel__item.sn-carousel-item(data-item)
+				.sn-carousel-item__heading(data-heading) ОБЯЗАТЕЛЬНОЕ СНАРЯЖЕНИЕ
+				.sn-carousel-item__content(data-content) --пусто--
+				
+			.sn-carousel__item.sn-carousel-item(data-item)
+				.sn-carousel-item__heading(data-heading) ДРУГОЕ НЕОБЯЗАТЕЛЬНОЕ СНАРЯЖЕНИЕ
+				.sn-carousel-item__content(data-content) --пусто--
+				
+			.sn-carousel__item.sn-carousel-item(data-item)
+				.sn-carousel-item__heading(data-heading) ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ
+				.sn-carousel-item__content(data-content) --пусто--
+
+	div(style="height:200px;")
+
+	.container.container-elbrus-more
+		#tour-book-carousel.tour-book-carousel.owl-carousel.owl-theme
+			.item.tour-book-item
+				.tour-book-item__preview
+					img(src="img/elbrus-more-ex.png")
+					.tour-book-item__preview-content
+						.tour-book-item__tags
+							.tour-book-item__tag Все включено
+							.tour-book-item__tag Россия
+
+						button.tour-book-item__fav.--active
+
+						.tour-book-item__title ВОСХОЖДЕНИЕ НА ЭЛЬБРУС С ЮГА, КОМФОРТ
+
+				.tour-book-item__chars
+					.tour-book-item__char
+						.tour-book-item__char-digit 15
+						.tour-book-item__char-descr дней
+					.tour-book-item__char.--km
+						.tour-book-item__char-digit 120
+						.tour-book-item__char-descr км
+					.tour-book-item__char.--difficulty
+						.tour-book-item__char-picture.--level-1
+						.tour-book-item__char-descr сложность
+					.tour-book-item__char.--comfort
+						.tour-book-item__char-picture.--level-1
+						.tour-book-item__char-descr комфорт
+
+				.tour-book-item__details
+					.tour-book-item__date
+						| 18.08.2022,
+						br
+						| ещё 27 заездов
+						br
+						| и под заказ
+					.tour-book-item__prices
+						.tour-book-item__discount-to до 10.08.2022
+						.tour-book-item__full-price 125 000 ₽
+						.tour-book-item__price
+							small от
+							b 110 000 ₽
+
+				.tour-book-item__btns
+					.tour-book-item__more-btn
+						a(href="#") Подробнее
+					.tour-book-item__book-btn
+						a(href="#").sn-btn Забронировать
+
+			.item.tour-book-item
+				.tour-book-item__preview
+					img(src="img/elbrus-more-ex.png")
+					.tour-book-item__preview-content
+						.tour-book-item__tags
+							.tour-book-item__tag Все включено
+							.tour-book-item__tag Россия
+
+						button.tour-book-item__fav.--active
+
+						.tour-book-item__title ВОСХОЖДЕНИЕ НА ЭЛЬБРУС С ЮГА, КОМФОРТ
+
+				.tour-book-item__chars
+					.tour-book-item__char
+						.tour-book-item__char-digit 15
+						.tour-book-item__char-descr дней
+					.tour-book-item__char.--km
+						.tour-book-item__char-digit 120
+						.tour-book-item__char-descr км
+					.tour-book-item__char.--difficulty
+						.tour-book-item__char-picture.--level-1
+						.tour-book-item__char-descr сложность
+					.tour-book-item__char.--comfort
+						.tour-book-item__char-picture.--level-1
+						.tour-book-item__char-descr комфорт
+
+				.tour-book-item__details
+					.tour-book-item__date
+						| 18.08.2022,
+						br
+						| ещё 27 заездов
+						br
+						| и под заказ
+					.tour-book-item__prices
+						.tour-book-item__discount-to до 10.08.2022
+						.tour-book-item__full-price 125 000 ₽
+						.tour-book-item__price
+							small от
+							b 110 000 ₽
+
+				.tour-book-item__btns
+					.tour-book-item__more-btn
+						a(href="#") Подробнее
+					.tour-book-item__book-btn
+						a(href="#").sn-btn Забронировать
+
+
+		.owl-theme
+			.owl-controls
+				.custom-nav.owl-nav
+
+
+
+
+	//- div(style="width:1280px; margin-left: 27px; margin-top: 32px")
+	div(style="margin-top: 200px;padding-left: 80px;padding-right: 80px;")
+		.tour-choice
+			.tour-choice-header
+				.tour-choice-header__date ДАТА ЗАЕЗДА
+				.tour-choice-header__guide ИНСТРУКТОР
+				.tour-choice-header__left ОСТАЛОСЬ
+				.tour-choice-header__prices ЦЕНА
+				.tour-choice-header__book
+			.tour-choice__rows
+				.tour-choice-row
+					.tour-choice-row__date 18 августа 2022
+					.tour-choice-row__guide
+						.tour-choice-row__guide-picture
+							img(src="img/guide_ex.png")
+						.tour-choice-row__guide-content
+							.tour-choice-row__guide-name Александр Сотников
+							.tour-choice-row__guide-detail Инструктор альпинизма, мастер спорта, Снежный Барс
+					.tour-choice-row__left.--warning 1 место
+					.tour-choice-row__prices 
+						.tour-choice-row__price-full 110 000 ₽
+						.tour-choice-row__price 78 000 ₽ 
+						.tour-choice-row__discount-to до 22.08.22
+					.tour-choice-row__book
+						.sn-btn Забронировать
+
+				.tour-choice-row
+					.tour-choice-row__date 18 августа 2022
+					.tour-choice-row__guide
+						.tour-choice-row__guide-picture
+							img(src="img/guide_ex.png")
+						.tour-choice-row__guide-content
+							.tour-choice-row__guide-name Сергей Пугачев
+							.tour-choice-row__guide-detail Чемпион России, мастер спорта, автор книги "Дорога к вершинам"
+					.tour-choice-row__left.--warning 1 место
+					.tour-choice-row__prices
+						.tour-choice-row__price-full 110 000 ₽
+						.tour-choice-row__price 78 000 ₽ 
+						.tour-choice-row__discount-to до 22.08.22
+					.tour-choice-row__book
+						.sn-btn Забронировать
+
+				.tour-choice-row
+					.tour-choice-row__date 18 августа 2022
+					.tour-choice-row__guide
+						.tour-choice-row__guide-picture
+							img(src="img/guide_ex.png")
+						.tour-choice-row__guide-content
+							.tour-choice-row__guide-name Александр Сотников
+							.tour-choice-row__guide-detail МС по альпинизму, инструктор по альпинизму и скалолазанию, судья 2 категории
+					.tour-choice-row__left.--warning 1 место
+					.tour-choice-row__prices 
+						.tour-choice-row__price-full 110 000 ₽
+						.tour-choice-row__price 78 000 ₽ 
+						.tour-choice-row__discount-to до 22.08.22
+					.tour-choice-row__book
+						.sn-btn Забронировать
+
+
+	div(style="height:80px;")
+
+	div(style="margin-left: 306px; width: 383px; padding: 21px 35px 0 20px")
+		button.sn-btn Button
+		div(style="height:30px;")
+		button.sn-btn Button
+		div(style="height:29px;")
+		button.sn-btn Button
+		div(style="height:30px;")
+		button.sn-btn(disabled) Button
+		div(style="height:29px;")
+		button.sn-btn.--default Button
+		div(style="height:30px;")
+		button.sn-btn.--default Button
+		div(style="height:29px;")
+		button.sn-btn.--default Button
+		div(style="height:30px;")
+		button.sn-btn.--default(disabled) Button
+
+	div(style="margin-left: 289px; width: 483px; padding: 20px 135px 0 20px; margin-top: 75px;")
+		div.sn-input-group
+			input.sn-form-control(type="text", placeholder="Ваше имя")
+			small Заполните поле
+			button.sn-input-group__clear
+		div(style="height:27px;")
+		div.sn-input-group
+			input.sn-form-control(type="text", placeholder="Ваше имя")
+			small Заполните поле
+			button.sn-input-group__clear
+		div(style="height:27px;")
+		div.sn-input-group
+			input.sn-form-control(type="text", placeholder="Ваше имя")
+			small Заполните поле
+			button.sn-input-group__clear
+		div(style="height:28px;")
+		div.sn-input-group
+			input.sn-form-control(type="text", placeholder="Ваше имя", value="Иван")
+			small Заполните поле
+			button.sn-input-group__clear.--visible
+		div(style="height:27px;")
+		div.sn-input-group
+			input.sn-form-control(type="text", placeholder="Ваше имя", value="Иван")
+			small Заполните поле
+			button.sn-input-group__clear.--visible
+		div(style="height:28px;")
+		div.sn-input-group
+			input.sn-form-control(type="text", placeholder="Ваше имя").--invalid
+			small Заполните поле
+			button.sn-input-group__clear
+		div(style="height:28px;")
+		div.sn-input-group
+			input.sn-form-control(type="text", placeholder="Ваше имя").--valid
+			small Заполните поле
+			button.sn-input-group__clear
+
+		div(style="height:50px;")
+		label.sn-radio(for="ui_radio_0") Окей 1
+			input(id="ui_radio_0", type="radio", name="ui_radio_0")
+			span.sn-radio__mark
+
+		div(style="height:16px;")
+		label.sn-radio(for="ui_radio_1") Окей 2
+			input(id="ui_radio_1", type="radio", name="ui_radio_0", disabled)
+			span.sn-radio__mark
+
+		div(style="height:16px;")
+		label.sn-radio(for="ui_radio_2") Окей 3
+			input(id="ui_radio_2", type="radio", name="ui_radio_1", checked)
+			span.sn-radio__mark
+
+		div(style="height:16px;")
+		label.sn-radio(for="ui_radio_3") Окей 4
+			input(id="ui_radio_3", type="radio", name="ui_radio_1", disabled, checked)
+			span.sn-radio__mark
+
+		div(style="height:50px;")
+		label.sn-checkbox(for="ui_checkbox_0") Окей 1
+			input(id="ui_checkbox_0", type="checkbox", name="ui_checkbox_0")
+			span.sn-checkbox__mark
+
+		div(style="height:16px;")
+		label.sn-checkbox(for="ui_checkbox_1") Окей 2
+			input(id="ui_checkbox_1", type="checkbox", name="ui_checkbox_0", disabled)
+			span.sn-checkbox__mark
+
+		div(style="height:16px;")
+		label.sn-checkbox(for="ui_checkbox_2_") Окей 3
+			input(id="ui_checkbox_2_", type="checkbox", name="ui_checkbox_1[]", checked)
+			span.sn-checkbox__mark
+
+		div(style="height:16px;")
+		label.sn-checkbox(for="ui_checkbox_3") Окей 4
+			input(id="ui_checkbox_3", type="checkbox", name="ui_checkbox_2[]", disabled, checked)
+			span.sn-checkbox__mark
+
+		div(style="height:150px;")
+
+
+	div.container.d-flex.justify-content-center
+		.how2part
+			.how2part__heading Как принять участие?
+			.how2part__content
+				| Вы можете 
+				a.link-highlight(href="#") забронировать этот тур 
+				| прямо сейчас самостоятельно. Это займет 5 минут. Если у вас остались вопросы, 
+				a.link-highlight(href="#") свяжитесь с нами 
+				| удобным для вас способом.
+
+
+	div(style="height:70px;")
