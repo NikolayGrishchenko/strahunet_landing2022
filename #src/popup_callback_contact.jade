@@ -1,14 +1,14 @@
-.sn-popup.--callback-contact
+.sn-popup.sn-popup--callback-contact
 	.sn-popup__heading
 		span Оставьте номер вашего телефона, и наш менеджер свяжется с вами
 	form.sn-popup__content.js-callback-contact-form
 		.sn-popup-form
 			.sn-input-group
-				input.sn-form-control(type="text", name="name", placeholder="Имя")
+				input.sn-form-control(type="text" name="name" placeholder="Имя")
 				small Заполните поле
 				button.sn-input-group__clear
 			.sn-input-group
-				input.sn-form-control.js-phone-input-autoprefix(type="text", name="phone", placeholder="Телефон")
+				input.sn-form-control.js-phone-input-autoprefix(type="text" name="phone" placeholder="Телефон" maxlength="13")
 				small Заполните поле
 				button.sn-input-group__clear
 		.sn-popup-btns
