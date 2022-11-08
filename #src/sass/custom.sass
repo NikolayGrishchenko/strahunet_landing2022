@@ -36,6 +36,16 @@
 .mfp-counter
 	padding-right: 12px
 
+.mfp-arrow, .mfp-arrow:hover
+	background: none
+
+@media (min-width: 768px)
+	.mfp-arrow
+		background: rgba(255, 255, 255, 0.15)
+
+	.mfp-arrow:hover
+		background: rgb(102, 103, 107)
+
 .toTop-btn
 	background-color: #00000033
 	border-radius: 50%
@@ -1151,11 +1161,15 @@ header.header.sticky .logo_sticky
 		margin-top: 57px
 
 		&__album
-			margin-top: 161px
+			margin-top: 50px
 
 			.tdb-heading
 				margin-top: 22px
 				margin-bottom: 26px
+
+	@media (min-width: 1200px)
+		&__album
+			margin-top: 161px
 
 	&__schedule
 		margin-top: 59px
@@ -2823,8 +2837,8 @@ header.header.sticky
 			display: none
 
 		.icon
-			background-image: url(../img/heart.svg)
-			filter: invert(100%)
+			mask-image: url(../img/heart.svg)
+			background-color: #222
 
 			display: inline-block
 			position: relative
@@ -2833,6 +2847,12 @@ header.header.sticky
 
 			width: 22px
 			height: 22px
+
+	&__fav.active
+		.icon
+			mask-image: none
+			background-image: url(../img/heart-active.svg)
+			background-color: transparent
 
 	&__m-btns
 		margin-top: 40px
@@ -2930,10 +2950,20 @@ header.header.sticky
 			line-height: 140%
 			color: #4DD2A3
 
-			.text
+			.text.for-active
+				display: none
+
+			.text.for-nonactive
 				display: inline-block
 
 			.icon
+				display: none
+
+		&__fav.active
+			.text.for-active
+				display: inline-block
+
+			.text.for-nonactive
 				display: none
 
 		&__descr
