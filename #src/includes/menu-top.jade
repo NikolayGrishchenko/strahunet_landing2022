@@ -11,7 +11,7 @@ header.header.menu_fixed
 
 		ul#top_menu.d-none.d-lg-block
 			li.top-menu-msg-item
-				a(href="/popup_callback_msg.html" data-fancybox data-type="ajax" data-touch="false")
+				a(href="/popup_callback_msg.html" data-fancybox data-type="ajax" data-touch="drag-bottom")
 					span.icon
 			li.top-menu-bell-item.__variant_1(style="display:none")
 				a(href="#").position-relative
@@ -43,24 +43,24 @@ header.header.menu_fixed
 
 		ul.m-top-menu#m_top_menu.d-lg-none
 			li.m-top-menu-item.--msg
-				a(href="/popup_callback_msg.html" data-fancybox data-type="ajax" data-touch="false")
+				a(href="/popup_callback_msg.html" data-fancybox data-type="ajax" data-touch="drag-bottom")
 					span.top-menu-icon.top-menu-icon--msg
 			li.m-top-menu-item.--bell.__variant_0
-				a(href="#").position-relative
+				a(href="javascript:void(0);").position-relative
 					span.top-menu-icon.top-menu-icon--bell
 					span.m-top-menu-notific-count.position-absolute
 						span.m-top-menu-notific-count__num 2
 						span.m-top-menu-notific-count__circle
 			li.m-top-menu-item.--bell.__variant_1(style="display:none")
-				a(href="#").position-relative
+				a(href="javascript:void(0);").position-relative
 					span.top-menu-icon.top-menu-icon--bell
 			li.m-top-menu-item.--burger
 				a(
 					href="/popup_menu_mobile.html"
-					data-fancybox=""
+					data-fancybox
 					data-type="ajax"
-					data-touch="false"
-				)
+					data-touch="drag-right"
+				).js-m-menu-show
 					span.top-menu-icon.top-menu-icon--burger
 
 	nav#menu.main-menu
@@ -115,4 +115,4 @@ header.header.menu_fixed
 					a(href='tel:+74951087465') +7 495 108 74 65
 			li.main-menu__callback
 				span
-					a(href="/popup_callback_contact.html" data-fancybox="" data-type="ajax" data-touch="false").link-highlight Заказать звонок
+					a(href="/popup_callback_contact.html" data-fancybox data-type="ajax" data-touch="drag-bottom").link-highlight Заказать звонок
