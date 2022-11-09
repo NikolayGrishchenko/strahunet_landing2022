@@ -908,11 +908,18 @@ header.header.sticky .logo_sticky
 	padding-bottom: 30px
 
 .tour-book-carousel-arrow
+	position: absolute
 	width: 40px
 	height: 40px
 	display: inline-block
-	background: url(../img/slider-arrow-left.svg)
-	position: absolute
+	background-image: url(../img/slider-arrow-left.svg)
+	border-radius: 50%
+
+	&:hover
+		background-color: #ff000210
+
+	&:active
+		background-color: #ff000226
 
 	&.--left
 		transform: rotateZ(180deg)
@@ -1679,6 +1686,12 @@ header.header.sticky .logo_sticky
 		font-size: 16px
 		line-height: 140%
 		color: #7E869A
+
+	&__show-all:hover
+		opacity: .7
+
+	&__show-all:active
+		opacity: .5
 
 	& &__item
 		margin-top: 8px
@@ -2854,6 +2867,12 @@ header.header.sticky
 			background-image: url(../img/heart-active.svg)
 			background-color: transparent
 
+	&__fav:hover
+		opacity: .7
+
+	&__fav:active
+		opacity: .5
+
 	&__m-btns
 		margin-top: 40px
 		display: flex
@@ -3811,6 +3830,12 @@ header.header.sticky
 		position: relative
 		width: 62px
 		top: 1px
+
+	&__logo:hover
+		opacity: .8
+
+	&__logo:active
+		opacity: .7
 
 	&__company
 		position: absolute
