@@ -9,39 +9,39 @@ header.header.menu_fixed
 				img.logo_normal(src='img/logo_sticky.svg' width='57' height='26' alt='').logo_mobile
 				img.logo_sticky(src='img/logo_sticky.svg' width='57' height='26' alt='').logo_mobile
 
-		ul#top_menu.d-none.d-lg-block
+		//- ul#top_menu.d-none.d-lg-block
+		ul#top_menu.d-none
 			li.top-menu-msg-item
 				a(href="/popup_callback_msg.html" data-fancybox data-type="ajax" data-touch="drag-bottom")
 					span.icon
 			li.top-menu-bell-item.__variant_1(style="display:none")
-				a(href="#").position-relative
+				a(href="javascript:void(0)").position-relative
 					span.top-menu-icon.top-menu-icon--bell
 					span.m-top-menu-notific-count.position-absolute
 						span.m-top-menu-notific-count__num 2
 						span.m-top-menu-notific-count__circle
 			li.top-menu-lang-item
-				span.sn-menu-select.js-sn-menu-select(data-body-class="sn-menu-select").--default.--top-menu-wide
+				span.sn-menu-select.js-sn-menu-select.--default.--top-menu-wide(data-body-class="sn-menu-select")
 					select
 						option(value="RUB") RUB
-						option(selected, value="USD") USD
+						option(selected value="USD") USD
 			li.top-menu-lang-item
-				span.sn-menu-select.js-sn-menu-select(data-body-class="sn-menu-select-lang").--default.--lang-short
+				span.sn-menu-select.js-sn-menu-select.--default.--lang-short(data-body-class="sn-menu-select-lang")
 					select
 						option RU
 						option(selected) EN
 			li.__variant_0
 				button(type="button").sn-btn-elegant Войти
 			li.top-menu-user-item.__variant_1(style="display:none")
-				a(href="#").top-menu-user
+				a(href="javascript:void(0)").top-menu-user
 					i.icon-user-1
-
 
 		a.btn_mobile(href='#menu')
 			#hamburger.hamburger.hamburger--spin
 				.hamburger-box
 					.hamburger-inner
 
-		ul.m-top-menu#m_top_menu.d-lg-none
+		ul.m-top-menu#m_top_menu.d-xl-none
 			li.m-top-menu-item.--msg
 				a(href="/popup_callback_msg.html" data-fancybox data-type="ajax" data-touch="drag-bottom")
 					span.top-menu-icon.top-menu-icon--msg
@@ -56,63 +56,63 @@ header.header.menu_fixed
 					span.top-menu-icon.top-menu-icon--bell
 			li.m-top-menu-item.--burger
 				a(
-					href="/popup_menu_mobile.html"
-					data-fancybox
-					data-type="ajax"
+					href="javascript:void(0)"
+					data-fancybox-href="/popup_menu_mobile.html"
 					data-touch="drag-right"
 				).js-m-menu-show
 					span.top-menu-icon.top-menu-icon--burger
 
-	nav#menu.main-menu
-		ul
-			li.main-menu__item.d-none.d-xl-inline-block
-				span
-					a(href='#0') Все туры
-				ul
-					li
-						a(href='index.html') Раздел меню
-					li
-						span
-							a(href='#0') Раздел меню
-						ul
-							li
-								a(href='#') Раздел меню
-							li
-								a(href='#') Раздел меню
+		nav#menu.main-menu
+			ul
+				li.main-menu__item.d-none.d-xl-inline-block
+					span
+						a(href='#0') Все туры
+					ul
+						li
+							a(href='javascript:void(0);') Казбек с севера
+						li
+							a(href='javascript:void(0);') Эльбрус с юга
+						li
+							a(href='javascript:void(0);') Килиманджаро
 
-			li.main-menu__item.d-none.d-xl-inline-block
-				span
-					a(href='#0') Прокат
-				ul
-					li
-						a(href='index.html') Раздел меню
-					li
-						span
-							a(href='#0') Раздел меню
-						ul
-							li
-								a(href='#') Раздел меню
-							li
-								a(href='#') Раздел меню
+				//- li.main-menu__item.d-none.d-xl-inline-block
+				li.main-menu__item.d-none
+					span
+						a(href='#0') Прокат
+					ul
+						li
+							a(href='index.html') Раздел меню
+						li
+							span
+								a(href='#0') Раздел меню
+							ul
+								li
+									a(href="javascript:void(0)") Раздел меню
+								li
+									a(href="javascript:void(0)") Раздел меню
 
-			li.main-menu__item.d-none.d-xl-inline-block
-				span
-					a(href='#0') Магазин
-				ul
-					li
-						a(href='index.html') Раздел меню
-					li
-						span
-							a(href='#0') Раздел меню
-						ul
-							li
-								a(href='#') Раздел меню
-							li
-								a(href='#') Раздел меню
-								
-			li.main-menu__phone
-				span
-					a(href='tel:+74951087465') +7 495 108 74 65
-			li.main-menu__callback
-				span
-					a(href="/popup_callback_contact.html" data-fancybox data-type="ajax" data-touch="drag-bottom").link-highlight Заказать звонок
+				//- li.main-menu__item.d-none.d-xl-inline-block
+				li.main-menu__item.d-none
+					span
+						a(href='#0') Магазин
+					ul
+						li
+							a(href='index.html') Раздел меню
+						li
+							span
+								a(href='#0') Раздел меню
+							ul
+								li
+									a(href="javascript:void(0)") Раздел меню
+								li
+									a(href="javascript:void(0)") Раздел меню
+									
+				li.main-menu__phone
+					span
+						a(href='tel:+74951087465') +7 495 108 74 65
+				li.main-menu__callback
+					span
+						a.b24-callback-form-btn.link-highlight Заказать звонок
+						//- a(href="/popup_callback_contact.html" data-fancybox data-type="ajax" data-touch="drag-bottom").link-highlight Заказать звонок
+
+	//- тут было #menu

@@ -1,3 +1,4 @@
-dist
-main_catalog
-node_modules
+/includes
+/dist/**/*.html
+/main_catalog
+/node_modules

@@ -1,0 +1,33 @@
+.m-menu
+	.m-menu__selectors
+		.sn-menu-select.js-sn-menu-select(data-body-class="sn-menu-select")
+			select
+				option(value="222") RUB
+				option(selected value="222") USD
+		.sn-menu-select.js-sn-menu-select(data-body-class="sn-menu-select")
+			select
+				option RU
+				option EN
+
+	.m-menu__items
+		a(href="javascript:void(0)").m-menu-item Все туры
+		a(href="javascript:void(0)").m-menu-item Прокат
+		a(href="javascript:void(0)").m-menu-item Магазин
+		a(href="javascript:void(0)").m-menu-item.__variant_0 Личный кабинет
+		a(href="javascript:void(0)" style="display:none").m-menu-item.__variant_1 Войти
+
+	.m-menu__callback
+		.m-menu__callback-title Мы на связи:
+
+		.m-menu__socials
+			a(href="https://api.whatsapp.com/send/?phone=34677225316&amp;text&amp;app_absent=0" target="_blank").m-menu-social.m-menu-social--whatsapp
+			a(href="https://t.me/elbrusclimb" target="_blank").m-menu-social.m-menu-social--telegram
+			a(href="https://vk.me/club9690799" target="_blank").m-menu-social.m-menu-social--vk
+
+		.m-menu__phone
+			a(href="tel:74951087465") +7 495 108 74 65
+
+	button.m-menu__close(data-fancybox-dragclose)
+
+	script.
+		$('.js-sn-menu-select select').select2();

@@ -18,30 +18,30 @@ function style()
 	.pipe(sass().on('error', sass.logError))
 	.pipe(autoprefixer())
 	.pipe(replace('  ', '	'))
-	.pipe(extractMediaQuery({
-		match: '(min-width: 375px)',
-		postfix: '-375'
-	}))
-	.pipe(extractMediaQuery({
-		match: '(min-width: 768px)',
-		postfix: '-768'
-	}))
-	.pipe(extractMediaQuery({
-		match: '(min-width: 992px)',
-		postfix: '-992'
-	}))
-	.pipe(extractMediaQuery({
-		match: '(min-width: 1200px)',
-		postfix: '-1200'
-	}))
-	.pipe(extractMediaQuery({
-		match: '(min-width: 1400px)',
-		postfix: '-1400'
-	}))
-	.pipe(extractMediaQuery({
-		match: '(min-width: 1600px)',
-		postfix: '-1600'
-	}))
+	// .pipe(extractMediaQuery({
+	// 	match: '(min-width: 375px)',
+	// 	postfix: '-375'
+	// }))
+	// .pipe(extractMediaQuery({
+	// 	match: '(min-width: 768px)',
+	// 	postfix: '-768'
+	// }))
+	// .pipe(extractMediaQuery({
+	// 	match: '(min-width: 992px)',
+	// 	postfix: '-992'
+	// }))
+	// .pipe(extractMediaQuery({
+	// 	match: '(min-width: 1200px)',
+	// 	postfix: '-1200'
+	// }))
+	// .pipe(extractMediaQuery({
+	// 	match: '(min-width: 1400px)',
+	// 	postfix: '-1400'
+	// }))
+	// .pipe(extractMediaQuery({
+	// 	match: '(min-width: 1600px)',
+	// 	postfix: '-1600'
+	// }))
 	.pipe(gulp.dest('./dist/css'))
 	.pipe(cleanCSS(
 		{
